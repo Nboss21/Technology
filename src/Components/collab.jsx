@@ -4,9 +4,9 @@ import { clients } from '../constants'
 const Collab = () => (
   <section className="flex justify-center items-center my-4">
     <div className="flex justify-center items-center flex-wrap w-full ">
-      {clients.map((client) => (
+      {clients.map((client,index) => (
         <div
-          key={client.id}
+          key={index}
           className="flex-1 flex justify-center items-center sm:min-w[192px] min-w-[120px]"
         >
           <img
