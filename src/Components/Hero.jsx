@@ -2,15 +2,15 @@ import React from 'react'
 import GetStarted from './Getstarted';
 
 const Hero = () => (
-  <section className=" flex md:flex-row flex-col justify-between sm:px-16 py-6   ">
+  <section className=" flex md:flex-row flex-col justify-between sm:py-16 py-6   ">
     <div className="flex-1 flex-col xl:px-0 sm:px-16 px-6 flex justify-center items-start ">
-      <div className="flex flex-row items-center py-[6px] px-4 bg-[#272727] rounded-[10px] mb-1 ">
+      <div className="flex flex-row items-center py-[6px] px-4 bg-[#2F2E37] rounded-[10px] mb-1 ">
         <img
           src="/images/percent.png"
           alt="discount"
           className="w-[32px] h-[32px]"
         />
-        <p className="font-poppins font-normal text-dimWhite text-[18px] leading-[30.8px]">
+        <p className="font-poppins font-normal text-[#BCBCBE] text-[18px] leading-[30.8px]">
           <span className="text-white">20%</span> Discount For{" "}
           <span className="text-white "> 1 Month</span> Account
         </p>
@@ -20,7 +20,7 @@ const Hero = () => (
           The Next <br className="sm:block hidden" />
           <span className="text-[#33BBCF]">Generation</span>
         </h1>
-        <div className="ss:flex  md:mr-4 mr-0">
+        <div className="ss:flex hidden md:mr-4 mr-0">
           <GetStarted />
         </div>
       </div>
@@ -32,7 +32,6 @@ const Hero = () => (
         likely to fit your needs. We examine annual percentage rates, annual
         fees.
       </p>
-      
     </div>
     <div className=" flex-1 flex justify-center items-center md:my-0 my-10 relative">
       <img
@@ -44,9 +43,9 @@ const Hero = () => (
       <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
       <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" />
     </div>
-    {/* <div className="ss:hidden flex justify-center items-center">
+    <div className="ss:hidden flex justify-center items-center">
       <GetStarted />
-    </div> */}
+    </div>
   </section>
 );
 

@@ -12,21 +12,21 @@ const FeatureCard = ({ icon, title, content, index }) => (
       <img
         src={`${icon}`}
         alt="icon"
-        className="w-[50%] h-[50%] object-contain"
+        className="w-[100%] h-[100%] object-contain"
       />
     </div>
     <div className="flex flex-col ml-3 flex-1">
       <h4 className="font-poppins font-semibold text-white text-[18px] leading-[23px] mb-1">
         {title}
       </h4>
-      <p className="font-poppins font-semibold text-gray-400 text-[16px] leading-[24px] mb-1">
+      <p className="font-poppins font-semibold text-gray-400 text-[16px] leading-[24px] mb-0">
         {content}
       </p>
     </div>
   </div>
 );
 const Business = () => (
-  <section className="flex md:flex-row flex-col sm:px-16 px-6">
+  <section className="flex md:flex-row flex-col sm:py-16 py-6">
     <div className="flex justify-center items-start flex-col">
       <h2 className="font-poppins font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full">
         You do the business,
@@ -39,7 +39,7 @@ const Business = () => (
       </p>
       <Button styles="mt-10" />
     </div>
-    <div className="flex-col flex-1 flex justify-center items-center md:ml-10 ml-0 md:mt-0 mt-10 relative">
+    <div className="flex-col flex-1 flex justify-center items-start md:ml-10 ml-0 md:mt-0 mt-10 relative">
 { features.map((feat,index)=>(
   <FeatureCard key={feat.id} {...feat}
   index={index}

@@ -4,30 +4,73 @@ function Navbar() {
     const [toggle, setToggle] = useState(false)
   return (
     <nav className=" w-full flex py-6 justify-between items-center navbar">
-      <div className="  w-full flex py-6 justify-between items-center navbar">
-        <img src="/images/hoobank.svg" alt="" className="w-[124px] h-[32px]" />
+      <img src="/images/hoobank.svg" alt="" className="w-[124px] h-[32px]" />
 
-        <div className="sm:flex hidden flex-1 justify-between   ">
-          <a href="#" className="text-1xl text-white font-poppins ">
-            Home
-          </a>
-          <a href="#" className="text-1xl text-white font-poppins border-">
-            Aboutus
-          </a>
-          <a href="#" className="text-1xl text-white font-poppins border-">
-            Features
-          </a>
-          <a href="#" className="text-1xl text-white font-poppins border-">
-            Solution
-          </a>
-        </div>
-       
+      <div className="sm:flex hidden flex-1 justify-end    ">
+        <a
+          href="#"
+          className="text-1xl text-white font-poppins  cursor-pointer text-[16px] mr-10"
+        >
+          Home
+        </a>
+        <a
+          href="#"
+          className="text-1xl text-white font-poppins  cursor-pointer text-[16px] mr-10"
+        >
+          About
+        </a>
+        <a
+          href="#"
+          className="text-1xl text-white font-poppins  cursor-pointer text-[16px] mr-10"
+        >
+          Features
+        </a>
+        <a
+          href="#"
+          className="text-1xl text-white font-poppins cursor-pointer text-[16px] mr-0"
+        >
+          Solution
+        </a>
       </div>
+
       <div className="flex sm:hidden flex-1 justify-end items-center">
         <img
-          src="data:image/svg+xml,%3csvg%20width='20'%20height='12'%20viewBox='0%200%2020%2012'%20fill='%23FFF'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M9%202L19%202C19.2652%202%2019.5196%201.89464%2019.7071%201.70711C19.8946%201.51957%2020%201.26522%2020%201C20%200.734784%2019.8946%200.480429%2019.7071%200.292892C19.5196%200.105356%2019.2652%200%2019%200L9%200C8.73478%200%208.48043%200.105356%208.29289%200.292892C8.10536%200.480429%208%200.734784%208%201C8%201.26522%208.10536%201.51957%208.29289%201.70711C8.48043%201.89464%208.73478%202%209%202ZM19%2010L1%2010C0.734784%2010%200.480429%2010.1054%200.292892%2010.2929C0.105356%2010.4804%200%2010.7348%200%2011C0%2011.2652%200.105356%2011.5196%200.292892%2011.7071C0.480429%2011.8946%200.734784%2012%201%2012L19%2012C19.2652%2012%2019.5196%2011.8946%2019.7071%2011.7071C19.8946%2011.5196%2020%2011.2652%2020%2011C20%2010.7348%2019.8946%2010.4804%2019.7071%2010.2929C19.5196%2010.1054%2019.2652%2010%2019%2010V10ZM1%207L19%207C19.2652%207%2019.5196%206.89464%2019.7071%206.70711C19.8946%206.51957%2020%206.26522%2020%206C20%205.73478%2019.8946%205.48043%2019.7071%205.29289C19.5196%205.10536%2019.2652%205%2019%205L1%205C0.734784%205%200.480429%205.10536%200.292892%205.29289C0.105356%205.48043%200%205.73478%200%206C0%206.26522%200.105356%206.51957%200.292892%206.70711C0.480429%206.89464%200.734784%207%201%207Z'%20fill='%23FFFFFF'/%3e%3c/svg%3e"
-          alt=""
+          src={toggle ? "/images/close.svg" : "/images/ham.svg"}
+          className="w-[28px] h-[28px] object-contain "
+          onClick={() => setToggle((prev) => !prev)}
         />
+        <div
+          className={`${
+            toggle ? "flex" : "hidden"
+          } p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
+        >
+          <div className="flex flex-col justify-between flex-1    ">
+            <a
+              href="#"
+              className="text-1xl text-white font-poppins  cursor-pointer text-[16px] mr-10"
+            >
+              Home
+            </a>
+            <a
+              href="#"
+              className="text-1xl text-white font-poppins  cursor-pointer text-[16px] mr-10"
+            >
+              About
+            </a>
+            <a
+              href="#"
+              className="text-1xl text-white font-poppins  cursor-pointer text-[16px] mr-10"
+            >
+              Features
+            </a>
+            <a
+              href="#"
+              className="text-1xl text-white font-poppins cursor-pointer text-[16px] mr-0"
+            >
+              Solution
+            </a>
+          </div>
+        </div>
       </div>
     </nav>
   );
