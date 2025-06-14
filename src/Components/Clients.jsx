@@ -1,5 +1,5 @@
 import React from 'react'
-import { feedback } from '../constants'
+import { feedback } from "../constants/index.js";
 import Featurecard from './Featurecard';
 const Clients = () => (
   <section className="flex flex-col  sm:py-16 py-6 relative justify-center items-center">

@@ -1,5 +1,5 @@
 
-import { stats } from '../constants'
+import { stats } from '../constants/index.js'
 
 const Stats = () => (
   <section className="flex justify-center items-center flex-row flex-wrap sm:mb-20 mb-5">

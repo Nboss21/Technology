@@ -1,5 +1,5 @@
 import React from 'react'
-import { clients } from '../constants'
+import { clients } from "../constants/index.js";
 
 const Testimony = () => (
   <section className="flex justify-center items-center my-4">

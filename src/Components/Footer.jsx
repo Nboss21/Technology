@@ -1,5 +1,5 @@
 import React from 'react'
-import {footerLinks} from '../constants'
+import { footerLinks } from "../constants/index.js";
 import { socialMedia } from '../constants';
 const Footer = () => (
   <section className="flex justify-center items-center sm:py-16 py-6 flex-col">
