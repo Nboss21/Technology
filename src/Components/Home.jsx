@@ -6,9 +6,10 @@ import Business from './Business';
 import Billing from './Billing';
 import Card from './Card';
 import Comment from './Comment';
-import Collab from './Collab';
+
 import CTAsection from './CTAsection';
 import Footer from './Footer';
+import Testimony from './testimony';
 
 function Home() {
   return (
@@ -30,9 +31,9 @@ function Home() {
           <Billing />
           <Card />
           <Comment />
-          <Collab />
-          <CTAsection/>
-          <Footer/>
+          <Testimony/>
+          <CTAsection />
+          <Footer />
         </div>
       </div>
     </div>

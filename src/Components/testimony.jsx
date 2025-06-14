@@ -1,7 +1,7 @@
 import React from 'react'
 import { clients } from '../constants'
 
-const Collab = () => (
+const Testimony = () => (
   <section className="flex justify-center items-center my-4">
     <div className="flex justify-center items-center flex-wrap w-full ">
       {clients.map((client,index) => (
@@ -20,4 +20,4 @@ const Collab = () => (
   </section>
 );
 
-export default Collab
+export default Testimony
