@@ -5,7 +5,7 @@ import Stats from './Stats';
 import Business from './Business';
 import Billing from './Billing';
 import Card from './Card';
-import Comment from './Comment';
+import Comment from './comment';
 import CTAsection from './CTA';
 import Footer from './Footer';
 import Testimony from './testimony';
