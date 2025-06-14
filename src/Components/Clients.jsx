@@ -1,7 +1,7 @@
 import React from 'react'
 import { feedback } from '../constants'
 import Featurecard from './Featurecard';
-const Comment = () => (
+const Clients = () => (
   <section className="flex flex-col  sm:py-16 py-6 relative justify-center items-center">
     
     <div className="w-full flex justify-between items-center md:flex-row flex-col sm:mb-16 mb-6 relative z-[1]">
@@ -27,4 +27,4 @@ const Comment = () => (
 );
 
 
-export default Comment;
+export default Clients;

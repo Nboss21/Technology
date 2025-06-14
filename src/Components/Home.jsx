@@ -5,10 +5,11 @@ import Stats from './Stats';
 import Business from './Business';
 import Billing from './Billing';
 import Card from './Card';
-import Comment from './comment';
+
 import CTAsection from './CTA';
 import Footer from './Footer';
 import Testimony from './testimony';
+import Clients from './Clients';
 
 function Home() {
   return (
@@ -25,14 +26,14 @@ function Home() {
       </div>
       <div className="bg-[#00040F] sm:px-16 px-6 flex justify-center items-start ">
         <div className="xl:max-w-[1280px] w-full">
-          <Stats />
-          <Business />
-          <Billing />
-          <Card />
-          <Comment />
+          <Stats/>
+          <Business/>
+          <Billing/>
+          <Card/>
+          <Clients/>
           <Testimony/>
-          <CTAsection />
-          <Footer />
+          <CTAsection/>
+          <Footer/>
         </div>
       </div>
     </div>
