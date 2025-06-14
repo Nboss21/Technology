@@ -18,7 +18,7 @@ const Comment = () => (
     </div>
     <div className='flex flex-wrap  sm:justify-start justify-center flex-row w-full relative z-[1]'>
 { feedback.map((feed,index)=>(
-    <Featurecard index ={index} {...feed}/>
+    <Featurecard key ={index} {...feed}/>
 ))
 
 }
