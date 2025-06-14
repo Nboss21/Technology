@@ -26,7 +26,7 @@ const Footer = () => (
             <ul className="list-none ">
               {links.links.map((link, index) => (
                 <li
-                  key={link.name}
+                  key={index}
                   className={`font-poppins font-normal text-[16px] leading-[24px] text-gray-400 hover:text-[#00f6ff] cursor-pointer ${
                     index == links.links.length - 1 ? "mb-0" : "mb-4"
                   }`}
