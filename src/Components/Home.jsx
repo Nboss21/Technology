@@ -6,7 +6,6 @@ import Business from './Business';
 import Billing from './Billing';
 import Card from './Card';
 import Comment from './Comment';
-
 import CTAsection from './CTAsection';
 import Footer from './Footer';
 import Testimony from './testimony';
