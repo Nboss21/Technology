@@ -5,8 +5,8 @@ import Stats from './Stats';
 import Business from './Business';
 import Billing from './Billing';
 import Card from './Card';
-import Comment from './comment';
-import Collab from './collab';
+import Comment from './Comment';
+import Collab from './Collab';
 import CTAsection from './CTAsection';
 import Footer from './Footer';
 
