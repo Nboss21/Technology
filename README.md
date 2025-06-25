@@ -29,11 +29,9 @@ Vite or Create React App (if applicable)
 
 Clone the repo and install dependencies:
 
-Copy
-Edit
-git clone https://github.com/Nboss21/Technology.git
-cd Technology
+-git clone https://github.com/Nboss21/Technology.git
+-cd Technology
 
 # If React project
-npm install
-npm run dev   or npm start
+-npm install
+-npm run dev or npm start
